@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pilihan Paket Membership | FitLife Gym & Fitness Center</title>
+  <meta name="description" content="Temukan paket membership gym terbaik di FitLife. Pilihan paket harian, bulanan, tahunan VIP, pelajar, dan keluarga dengan fasilitas modern terlengkap.">
+  <meta name="keywords" content="paket gym, harga member gym, paket fitness jakarta, membership fitlife, gym harian, gym bulanan, gym tahunan">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Fitness Theme CSS -->
+  <style>
+    :root {
+      --primary-color: #ff3b3b;
+      --secondary-color: #1a1a1a;
+      --accent-color: #ff6b6b;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background-color: rgba(20, 20, 20, 0.95) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+      transition: all 0.3s ease;
+    }
+
+    /* Footer Sitename Contrast Fix */
+    .footer .sitename,
+    .footer .footer-about .logo span,
+    .footer .copyright .sitename {
+      color: #011e2c !important;
+      font-weight: 700 !important;
+    }
+
+    /* Desktop Navigation */
+    @media (min-width: 1200px) {
+      .navmenu > ul > li > a,
+      .header .sitename {
+        color: #ffffff !important;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .navmenu > ul > li > a:hover,
+      .navmenu > ul > li > a.active {
+        color: var(--primary-color) !important;
+      }
+
+      /* Desktop Dropdown Menu Styling */
+      .navmenu .dropdown > ul {
+        background-color: #ffffff !important;
+        border-radius: 10px !important;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18) !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        padding: 8px 0 !important;
+        min-width: 230px !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        top: 130% !important;
+        transition: all 0.25s ease-in-out !important;
+      }
+
+      .navmenu .dropdown.dropdown-open > ul {
+        opacity: 1 !important;
+        visibility: visible !important;
+        top: 100% !important;
+      }
+
+      .navmenu .dropdown ul li a {
+        color: #1e293b !important;
+        font-size: 14.5px !important;
+        font-weight: 500 !important;
+        padding: 10px 20px !important;
+        display: block !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .navmenu .dropdown ul li a:hover {
+        color: var(--primary-color) !important;
+        background-color: #fff1f1 !important;
+        padding-left: 24px !important;
+      }
+
+      .navmenu .dropdown ul li:last-child a {
+        border-top: 1px solid #f1f5f9 !important;
+        color: var(--primary-color) !important;
+        font-weight: 600 !important;
+      }
+    }
+
+    /* Mobile Navigation Styling */
+    @media (max-width: 1199px) {
+      .mobile-nav-toggle {
+        color: #ffffff !important;
+        font-size: 32px !important;
+        cursor: pointer;
+      }
+
+      .navmenu ul {
+        position: fixed !important;
+        top: 70px !important;
+        left: 15px !important;
+        right: 15px !important;
+        max-height: calc(100vh - 90px) !important;
+        overflow-y: auto !important;
+        background-color: #ffffff !important;
+        border-radius: 14px !important;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3) !important;
+        padding: 15px !important;
+        margin: 0 !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      }
+
+      .navmenu ul li a {
+        color: #1e293b !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        padding: 12px 15px !important;
+        border-bottom: 1px solid #f1f5f9 !important;
+      }
+
+      .navmenu ul li a:hover,
+      .navmenu ul li a.active {
+        color: var(--primary-color) !important;
+      }
+
+      .navmenu .dropdown ul {
+        background-color: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 8px !important;
+        margin: 8px 10px 12px 10px !important;
+        padding: 6px 0 !important;
+        box-shadow: none !important;
+      }
+
+      .navmenu .dropdown.dropdown-open > ul {
+        display: block !important;
+      }
+
+      .navmenu .dropdown ul li a {
+        font-size: 14.5px !important;
+        color: #334155 !important;
+        padding: 8px 18px !important;
+        border-bottom: none !important;
+      }
+
+      .navmenu .dropdown ul li a:hover {
+        color: var(--primary-color) !important;
+        background-color: transparent !important;
+      }
+
+      .navmenu .dropdown ul li:last-child a {
+        color: var(--primary-color) !important;
+        font-weight: 600 !important;
+      }
+
+      .navmenu .toggle-dropdown {
+        color: #1e293b !important;
+      }
+    }
+
+    .navmenu .dropdown.dropdown-open > a i.toggle-dropdown {
+      transform: rotate(180deg);
+    }
+
+    .page-title {
+      margin-top: 85px !important;
+      padding: 55px 0 45px 0 !important;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(26, 26, 26, 0.92) 100%),
+                  url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop') center center / cover no-repeat !important;
+      border-bottom: 3px solid var(--primary-color) !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25) !important;
+      position: relative;
+    }
+
+    @media (max-width: 992px) {
+      .page-title {
+        margin-top: 75px !important;
+        padding: 40px 0 32px 0 !important;
+      }
+    }
+
+    .page-title h1 {
+      color: #ffffff !important;
+      font-size: 2.2rem !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.5px;
+      margin: 0 !important;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .page-title h1 {
+        font-size: 1.75rem !important;
+        margin-bottom: 12px !important;
+      }
+    }
+
+    .page-title .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14.5px;
+      font-weight: 500;
+      align-items: center;
+    }
+
+    .page-title .breadcrumbs ol li a {
+      color: #cbd5e1 !important;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .page-title .breadcrumbs ol li a:hover {
+      color: var(--primary-color) !important;
+    }
+
+    .page-title .breadcrumbs ol li.current {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+    }
+
+    .page-title .breadcrumbs ol li+li::before {
+      content: "/";
+      display: inline-block;
+      padding: 0 10px;
+      color: #64748b !important;
+    }
+
+    /* Pricing card styling */
+    .pricing-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 35px 25px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(255, 59, 59, 0.15);
+      border-color: rgba(255, 59, 59, 0.4);
+    }
+
+    .pricing-card.featured {
+      border: 2px solid var(--primary-color);
+      box-shadow: 0 12px 30px rgba(255, 59, 59, 0.2);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: var(--primary-color);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      text-transform: uppercase;
+    }
+
+    .pricing-card .price {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #111827;
+      margin: 15px 0 20px;
+    }
+
+    .pricing-card .price span {
+      font-size: 1rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    .pricing-features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 30px;
+      flex-grow: 1;
+    }
+
+    .pricing-features li {
+      margin-bottom: 12px;
+      font-size: 14.5px;
+      color: #4b5563;
+      display: flex;
+      align-items: center;
+    }
+
+    .pricing-features li i {
+      color: #10b981;
+      margin-right: 10px;
+      font-size: 1.1rem;
+    }
+
+    .pricing-features li.disabled {
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+
+    .pricing-features li.disabled i {
+      color: #cbd5e1;
+    }
+
+    .btn-pricing {
+      display: block;
+      width: 100%;
+      padding: 12px 20px;
+      text-align: center;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      background: #111827;
+      color: #fff;
+    }
+
+    .pricing-card.featured .btn-pricing,
+    .btn-pricing:hover {
+      background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(255, 59, 59, 0.4);
+    }
+
+    /* Floating Scroll-Top: bottom-left on desktop, above WA on mobile */
+    .scroll-top {
+      left: 20px !important;
+      right: auto !important;
+      bottom: 25px !important;
+      z-index: 99999 !important;
+      border-radius: 50% !important;
+      width: 48px !important;
+      height: 48px !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .floating-wa {
+      position: fixed;
+      bottom: 25px !important;
+      right: 25px !important;
+      width: 55px;
+      height: 55px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      z-index: 9999;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      transition: 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    .floating-wa:hover {
+      background-color: #128c7e;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .scroll-top {
+        left: auto !important;
+        right: 15px !important;
+        bottom: 85px !important;
+        width: 44px !important;
+        height: 44px !important;
+      }
+
+      .floating-wa {
+        bottom: 20px !important;
+        right: 15px !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 24px !important;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+
+</head>
+
+<body class="packages-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">FitLife</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle-btn active"><span>Paket</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="paket-harian.html">Paket Harian</a></li>
+              <li><a href="paket-bulanan.html">Paket Bulanan</a></li>
+              <li><a href="paket-tahunan.html">Paket Tahunan (VIP)</a></li>
+              <li><a href="paket.html" class="active">Lihat Semua Paket</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle-btn"><span>Program</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="group-class.html">Group Class</a></li>
+              <li><a href="personal-trainer.html">Personal Trainer</a></li>
+              <li><a href="program-penurunan-berat-badan.html">Program Penurunan Berat Badan</a></li>
+              <li><a href="program-pembentukan-otot.html">Program Pembentukan Otot</a></li>
+              <li><a href="program.html">Lihat Semua Program</a></li>
+            </ul>
+          </li>
+
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Pilihan Paket Membership</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="current">Paket Membership</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Investasi Terbaik untuk Tubuh Anda</h2>
+        <p>Pilih paket keanggotaan yang sesuai dengan kebutuhan rutinitas dan target kebugaran Anda</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Paket Harian -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-card">
+              <h3>Paket Harian (Daily Pass)</h3>
+              <p class="text-muted">Akses penuh 1 hari tanpa komitmen jangka panjang</p>
+              <div class="price">Rp 50.000<span> / hari</span></div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Akses area gym dan kardio 24 jam</li>
+                <li><i class="bi bi-check-circle-fill"></i> Loker dan kamar mandi air panas</li>
+                <li><i class="bi bi-check-circle-fill"></i> Air minum gratis tanpa batas</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> Gratis mengikuti Group Class</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> Konsultasi gizi bulanan</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> Sesi Personal Trainer</li>
+              </ul>
+              <a href="paket-harian.html" class="btn-pricing">Detail Paket Harian</a>
+            </div>
+          </div>
+
+          <!-- Paket Bulanan -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-card">
+              <h3>Paket Bulanan Reguler</h3>
+              <p class="text-muted">Pilihan paling fleksibel untuk latihan rutin setiap minggu</p>
+              <div class="price">Rp 350.000<span> / bulan</span></div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Akses gym tanpa batas setiap hari</li>
+                <li><i class="bi bi-check-circle-fill"></i> Akses 4x Group Class per bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i> Loker pribadi & fasilitas sauna</li>
+                <li><i class="bi bi-check-circle-fill"></i> 1x Analisis komposisi tubuh (InBody)</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> Free Personal Trainer session</li>
+                <li class="disabled"><i class="bi bi-x-circle-fill"></i> Akses seluruh cabang nasional</li>
+              </ul>
+              <a href="paket-bulanan.html" class="btn-pricing">Detail Paket Bulanan</a>
+            </div>
+          </div>
+
+          <!-- Paket Tahunan VIP (Featured) -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-card featured">
+              <span class="pricing-badge">Terpopuler</span>
+              <h3>Paket Tahunan (VIP Pass)</h3>
+              <p class="text-muted">Hasil optimal, hemat hingga 40% dengan fasilitas VIP</p>
+              <div class="price">Rp 2.999.000<span> / tahun</span></div>
+              <ul class="pricing-features">
+                <li><i class="bi bi-check-circle-fill"></i> Akses gym & sauna tanpa batas 365 hari</li>
+                <li><i class="bi bi-check-circle-fill"></i> Bebas semua Group Class (Zumba, Yoga, HIIT)</li>
+                <li><i class="bi bi-check-circle-fill"></i> 3x Sesi gratis dengan Personal Trainer</li>
+                <li><i class="bi bi-check-circle-fill"></i> Analisis InBody rutin setiap bulan</li>
+                <li><i class="bi bi-check-circle-fill"></i> Berlaku di seluruh cabang FitLife</li>
+                <li><i class="bi bi-check-circle-fill"></i> Goodie bag eksklusif & baju jersey</li>
+              </ul>
+              <a href="paket-tahunan.html" class="btn-pricing">Detail Paket VIP</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pertanyaan Seputar Membership</h2>
+        <p>Hal-hal yang sering ditanyakan mengenai pendaftaran dan fasilitas FitLife Gym</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion accordion-flush" id="faqlist">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Apakah ada biaya pendaftaran awal (joining fee)?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Khusus bulan ini, seluruh pendaftaran member bulanan dan tahunan mendapatkan promo <strong>Gratis Joining Fee</strong>! Anda hanya membayar tarif paket membership yang dipilih.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Apakah pemula akan diajari cara menggunakan alat fitness?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Tentu! Seluruh member baru berhak mendapatkan sesi pengenalan alat (*Gym Induction*) dan panduan keselamatan latihan secara gratis bersama floor trainer kami.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Bisakah membekukan (freeze) status membership jika sedang dinas atau sakit?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Bisa. Member tahunan memiliki kuota pembekuan hingga 60 hari dalam setahun tanpa biaya tambahan dengan menunjukkan bukti izin resmi.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">FitLife Gym</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Jenderal Sudirman No. 123</p>
+            <p>Jakarta Selatan, DKI Jakarta 12190</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 812 3456 7890</span></p>
+            <p><strong>Email:</strong> <span>info@fitlifegym.co.id</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="paket.html">Paket Membership</a></li>
+            <li><a href="group-class.html">Group Class</a></li>
+            <li><a href="galeri.html">Galeri Foto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Program Kami</h4>
+          <ul>
+            <li><a href="personal-trainer.html">Personal Trainer</a></li>
+            <li><a href="group-class.html">Group Fitness</a></li>
+            <li><a href="program-penurunan-berat-badan.html">Weight Loss Camp</a></li>
+            <li><a href="program-pembentukan-otot.html">Bodybuilding</a></li>
+            <li><a href="program.html">Semua Program</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Fasilitas</h4>
+          <ul>
+            <li><a href="galeri.html">Free Weight Area</a></li>
+            <li><a href="galeri.html">Cardio Zone</a></li>
+            <li><a href="galeri.html">Studio Kelas</a></li>
+            <li><a href="galeri.html">Locker & Sauna</a></li>
+            <li><a href="galeri.html">Protein Bar</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Komunitas</h4>
+          <ul>
+            <li><a href="blog.html">Blog & Artikel</a></li>
+            <li><a href="#">Kisah Sukses</a></li>
+            <li><a href="#">Event Bulanan</a></li>
+            <li><a href="#">Karir di FitLife</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">FitLife Gym</strong> <span>All Rights Reserved</span>
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top (Desktop: bottom-left, Mobile: above WA) -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" title="Chat Admin di WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

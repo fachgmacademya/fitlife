@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>FitLife Gym & Fitness Center | Bisnis Fitness Profesional</title>
+  <meta name="description"
+    content="FitLife Gym menyediakan fasilitas fitness terbaik, program khusus, group class, dan personal trainer untuk membantu Anda mencapai target kebugaran.">
+  <meta name="keywords"
+    content="fitness, gym, group class, program khusus, personal trainer, kebugaran, kesehatan, olahraga">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Fitness Theme CSS -->
+  <style>
+    :root {
+      --primary-color: #ff3b3b;
+      --secondary-color: #1a1a1a;
+      --accent-color: #ff6b6b;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background-color: rgba(20, 20, 20, 0.95) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+      transition: all 0.3s ease;
+    }
+
+    /* Footer Sitename Contrast Fix */
+    .footer .sitename,
+    .footer .footer-about .logo span,
+    .footer .copyright .sitename {
+      color: #011e2c !important;
+      font-weight: 700 !important;
+    }
+
+    /* Desktop Navigation */
+    @media (min-width: 1200px) {
+      .navmenu > ul > li > a,
+      .header .sitename {
+        color: #ffffff !important;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .navmenu > ul > li > a:hover,
+      .navmenu > ul > li > a.active {
+        color: var(--primary-color) !important;
+      }
+
+      /* Desktop Dropdown Menu Styling */
+      .navmenu .dropdown > ul {
+        background-color: #ffffff !important;
+        border-radius: 10px !important;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18) !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        padding: 8px 0 !important;
+        min-width: 230px !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        top: 130% !important;
+        transition: all 0.25s ease-in-out !important;
+      }
+
+      .navmenu .dropdown.dropdown-open > ul {
+        opacity: 1 !important;
+        visibility: visible !important;
+        top: 100% !important;
+      }
+
+      .navmenu .dropdown ul li a {
+        color: #1e293b !important;
+        font-size: 14.5px !important;
+        font-weight: 500 !important;
+        padding: 10px 20px !important;
+        display: block !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .navmenu .dropdown ul li a:hover {
+        color: var(--primary-color) !important;
+        background-color: #fff1f1 !important;
+        padding-left: 24px !important;
+      }
+
+      .navmenu .dropdown ul li:last-child a {
+        border-top: 1px solid #f1f5f9 !important;
+        color: var(--primary-color) !important;
+        font-weight: 600 !important;
+      }
+    }
+
+    /* Mobile Navigation Styling */
+    @media (max-width: 1199px) {
+      .mobile-nav-toggle {
+        color: #ffffff !important;
+        font-size: 32px !important;
+        cursor: pointer;
+      }
+
+      .navmenu ul {
+        position: fixed !important;
+        top: 70px !important;
+        left: 15px !important;
+        right: 15px !important;
+        max-height: calc(100vh - 90px) !important;
+        overflow-y: auto !important;
+        background-color: #ffffff !important;
+        border-radius: 14px !important;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3) !important;
+        padding: 15px !important;
+        margin: 0 !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      }
+
+      .navmenu ul li a {
+        color: #1e293b !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        padding: 12px 15px !important;
+        border-bottom: 1px solid #f1f5f9 !important;
+      }
+
+      .navmenu ul li a:hover,
+      .navmenu ul li a.active {
+        color: var(--primary-color) !important;
+      }
+
+      .navmenu .dropdown ul {
+        background-color: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 8px !important;
+        margin: 8px 10px 12px 10px !important;
+        padding: 6px 0 !important;
+        box-shadow: none !important;
+      }
+
+      .navmenu .dropdown.dropdown-open > ul {
+        display: block !important;
+      }
+
+      .navmenu .dropdown ul li a {
+        font-size: 14.5px !important;
+        color: #334155 !important;
+        padding: 8px 18px !important;
+        border-bottom: none !important;
+      }
+
+      .navmenu .dropdown ul li a:hover {
+        color: var(--primary-color) !important;
+        background-color: transparent !important;
+      }
+
+      .navmenu .dropdown ul li:last-child a {
+        color: var(--primary-color) !important;
+        font-weight: 600 !important;
+      }
+
+      .navmenu .toggle-dropdown {
+        color: #1e293b !important;
+      }
+    }
+
+    .navmenu .dropdown.dropdown-open > a i.toggle-dropdown {
+      transform: rotate(180deg);
+    }
+
+    .btn-primary,
+    .cta-btn.primary,
+    .register-btn,
+    .discover-btn {
+      background: linear-gradient(45deg, var(--primary-color), var(--accent-color)) !important;
+      border: none !important;
+      color: #fff !important;
+      box-shadow: 0 4px 15px rgba(255, 59, 59, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-primary:hover,
+    .cta-btn.primary:hover,
+    .register-btn:hover,
+    .discover-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(255, 59, 59, 0.6);
+    }
+
+    .section-title h2,
+    .section-heading {
+      color: var(--primary-color) !important;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Styling for cards */
+    .feature-card,
+    .metric-card,
+    .program-item,
+    .event-item,
+    .post-item,
+    .testimonial-item,
+    .value-card,
+    .info-item {
+      background: rgba(30, 30, 30, 0.8) !important;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover,
+    .metric-card:hover,
+    .program-item:hover,
+    .event-item:hover,
+    .post-item:hover,
+    .testimonial-item:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary-color) !important;
+    }
+
+    .feature-card.active {
+      background: rgba(255, 59, 59, 0.85) !important;
+      border-color: var(--primary-color) !important;
+    }
+
+    /* Hero Feature Cards Icon Styling */
+    .hero .feature-cards-wrapper .feature-card .feature-icon {
+      width: 64px !important;
+      height: 64px !important;
+      min-width: 64px !important;
+      background: rgba(255, 59, 59, 0.18) !important;
+      border: 1px solid rgba(255, 59, 59, 0.4) !important;
+      border-radius: 14px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      color: #ff3b3b !important;
+      box-shadow: 0 4px 15px rgba(255, 59, 59, 0.25) !important;
+      transition: all 0.3s ease !important;
+    }
+
+    .hero .feature-cards-wrapper .feature-card .feature-icon i {
+      color: #ff3b3b !important;
+      font-size: 1.85rem !important;
+      line-height: 1 !important;
+    }
+
+    .hero .feature-cards-wrapper .feature-card.active .feature-icon {
+      background: #ffffff !important;
+      border-color: #ffffff !important;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .hero .feature-cards-wrapper .feature-card.active .feature-icon i {
+      color: #ff3b3b !important;
+    }
+
+    /* Force text inside dark cards and hero to be white */
+    .hero h1,
+    .hero p,
+    .hero .stat-label,
+    .hero .stat-number,
+    .feature-card h3,
+    .feature-card p,
+    .feature-content p,
+    .metric-card h4,
+    .metric-card p,
+    .metric-value,
+    .program-item h4,
+    .program-item p,
+    .program-item .meta-info span,
+    .event-item h3,
+    .event-item p,
+    .event-item .info-row span,
+    .post-item h2 a,
+    .post-item p,
+    .testimonial-body p,
+    .testimonial-footer h5,
+    .testimonial-footer span,
+    .value-card h4,
+    .value-card p,
+    .info-text strong,
+    .info-text span {
+      color: #fff !important;
+    }
+
+    /* Section Fasilitas Image Height Match */
+    @media (min-width: 992px) {
+      .students-life-block .hero-image-wrapper {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .students-life-block .hero-image-wrapper .main-image {
+        width: 100% !important;
+        height: 480px !important;
+        object-fit: cover !important;
+        border-radius: 20px !important;
+      }
+
+      .students-life-block .hero-image-wrapper .floating-card {
+        bottom: 25px !important;
+        right: 25px !important;
+        background: #ffffff !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .students-life-block .hero-image-wrapper .main-image {
+        width: 100% !important;
+        height: 350px !important;
+        object-fit: cover !important;
+        border-radius: 20px !important;
+      }
+
+      .students-life-block .hero-image-wrapper .floating-card {
+        background: #ffffff !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+      }
+    }
+
+    .students-life-block .hero-image-wrapper .floating-card .card-number {
+      color: #111827 !important;
+      font-weight: 700 !important;
+    }
+
+    .students-life-block .hero-image-wrapper .floating-card .card-label {
+      color: #4b5563 !important;
+      font-weight: 500 !important;
+    }
+
+    .floating-wa {
+      position: fixed;
+      bottom: 25px !important;
+      right: 25px !important;
+      width: 55px;
+      height: 55px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      z-index: 9999;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      transition: 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    .floating-wa:hover {
+      background-color: #128c7e;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-10px);
+      }
+
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+    /* Floating Scroll-Top: bottom-left on desktop, above WA on mobile */
+    .scroll-top {
+      left: 20px !important;
+      right: auto !important;
+      bottom: 25px !important;
+      z-index: 99999 !important;
+      border-radius: 50% !important;
+      width: 48px !important;
+      height: 48px !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    @media (max-width: 768px) {
+      .floating-wa {
+        bottom: 20px !important;
+        right: 15px !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 24px !important;
+      }
+
+      .scroll-top {
+        left: auto !important;
+        right: 15px !important;
+        bottom: 85px !important;
+        width: 44px !important;
+        height: 44px !important;
+      }
+    }
+
+    .hero {
+      padding-top: 85px !important;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop') no-repeat center center / cover !important;
+    }
+
+    @media (max-width: 992px) {
+      .hero {
+        padding-top: 75px !important;
+      }
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: College
+  * Template URL: https://bootstrapmade.com/college-bootstrap-education-template/
+  * Updated: Mar 03 2026 with Bootstrap v5.3.8
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">FitLife</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle-btn"><span>Paket</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="paket-harian.html">Paket Harian</a></li>
+              <li><a href="paket-bulanan.html">Paket Bulanan</a></li>
+              <li><a href="paket-tahunan.html">Paket Tahunan (VIP)</a></li>
+              <li><a href="paket.html">Lihat Semua Paket</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle-btn"><span>Program</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="group-class.html">Group Class</a></li>
+              <li><a href="personal-trainer.html">Personal Trainer</a></li>
+              <li><a href="program-penurunan-berat-badan.html">Program Penurunan Berat Badan</a></li>
+              <li><a href="program-pembentukan-otot.html">Program Pembentukan Otot</a></li>
+              <li><a href="program.html">Lihat Semua Program</a></li>
+            </ul>
+          </li>
+
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="hero-wrapper">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
+              <h1>Bentuk Tubuh Ideal Anda Bersama Kami</h1>
+              <p>Dapatkan pengalaman kebugaran terbaik dengan fasilitas modern, kelas grup yang seru, dan pelatih
+                profesional yang siap membimbing Anda mencapai target kesehatan.</p>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <span class="stat-number">100+</span>
+                  <span class="stat-label">Alat Gym Modern</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Kelas per Minggu</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">24/7</span>
+                  <span class="stat-label">Jam Operasional</span>
+                </div>
+              </div>
+              <div class="action-buttons">
+                <a href="paket.html" class="btn-primary">Gabung Sekarang</a>
+                <a href="galeri.html" class="btn-secondary">Lihat Fasilitas</a>
+              </div>
+            </div>
+            <div class="col-lg-6 hero-media" data-aos="zoom-in" data-aos-delay="200">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop" alt="Fitness Center" class="img-fluid main-image">
+              <div class="image-overlay">
+                <div class="badge-accredited">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Sertifikasi Pelatih Internasional</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-cards-wrapper" data-aos="fade-up" data-aos-delay="300">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-heart-pulse-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Fasilitas Lengkap</h3>
+                  <p>Berbagai macam alat gym berstandar internasional untuk segala kebutuhan latihan Anda.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-card active">
+                <div class="feature-icon">
+                  <i class="bi bi-person-badge-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Personal Trainer</h3>
+                  <p>Pelatih berpengalaman yang siap membantu Anda dalam merancang program kebugaran personal.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Group Class Seru</h3>
+                  <p>Ikuti berbagai kelas mulai dari Zumba, Yoga, hingga HIIT untuk pembakaran kalori maksimal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="upcoming-event" data-aos="fade-up" data-aos-delay="400">
+        <div class="container">
+          <div class="event-content">
+            <div class="event-date">
+              <span class="day">Daftar</span>
+              <span class="month">Sekarang</span>
+            </div>
+            <div class="event-info">
+              <h3>Promo Spesial Member Baru</h3>
+              <p>Dapatkan potongan harga hingga 30% untuk pendaftaran member tahunan bulan ini. Fasilitas lengkap
+                menunggu Anda.</p>
+            </div>
+            <div class="event-action">
+              <a href="#" class="btn-event">Ambil Promo</a>
+              <span class="countdown">Berakhir dalam 3 hari</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+              <h3>Tentang FitLife</h3>
+              <h2>Membangun Kebiasaan Hidup Sehat & Kuat</h2>
+              <p>Berdiri sejak tahun 2018, FitLife Gym telah membantu ribuan member mencapai target kebugaran mereka.
+                Kami lebih dari sekadar tempat gym, kami adalah komunitas yang saling mendukung untuk gaya hidup yang
+                lebih baik dan lebih sehat.</p>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>2018</h4>
+                    <p>FitLife Gym pertama kali dibuka dengan fasilitas standar dan kelas-kelas dasar untuk komunitas
+                      lokal.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>2020</h4>
+                    <p>Menambahkan layanan Personal Trainer dan memperluas area free weight untuk memenuhi kebutuhan
+                      member.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>2022</h4>
+                    <p>Meluncurkan program Group Class spesial (Les Mills, Zumba, Yoga) dengan sertifikasi resmi.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>2025</h4>
+                    <p>Membuka cabang baru dan menjadi pusat kebugaran terlengkap dengan ekosistem kesehatan modern.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="about-image" data-aos="zoom-in" data-aos-delay="300">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1470&auto=format&fit=crop" alt="Gym Center" class="img-fluid rounded">
+
+              <div class="mission-vision" data-aos="fade-up" data-aos-delay="400">
+                <div class="mission">
+                  <h3>Misi Kami</h3>
+                  <p>Menyediakan fasilitas kebugaran terbaik, lingkungan yang positif, dan edukasi kesehatan untuk
+                    membantu masyarakat hidup lebih aktif dan produktif.</p>
+                </div>
+
+                <div class="vision">
+                  <h3>Visi Kami</h3>
+                  <p>Menjadi pusat kebugaran nomor satu di Indonesia yang menginspirasi perubahan positif melalui gaya
+                    hidup aktif dan sehat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="core-values" data-aos="fade-up" data-aos-delay="500">
+              <h3 class="text-center mb-4">Nilai-Nilai Kami</h3>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                  <div class="value-card">
+                    <div class="value-icon">
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                    <h4>Kualitas Premium</h4>
+                    <p>Selalu menjaga kualitas fasilitas, kebersihan, dan standar keamanan berlatih.</p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="value-card">
+                    <div class="value-icon">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <h4>Komunitas Inklusif</h4>
+                    <p>Lingkungan yang ramah untuk semua tingkat kebugaran, dari pemula hingga atlet pro.</p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="value-card">
+                    <div class="value-icon">
+                      <i class="bi bi-heart-pulse"></i>
+                    </div>
+                    <h4>Berorientasi Hasil</h4>
+                    <p>Fokus pada program yang memberikan hasil nyata untuk kesehatan fisik dan mental.</p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="value-card">
+                    <div class="value-icon">
+                      <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <h4>Inovasi Terus-Menerus</h4>
+                    <p>Menghadirkan tren kebugaran terbaru dan kelas inovatif untuk para member.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Featured Programs Section -->
+    <section id="featured-programs" class="featured-programs section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Paket Membership</h2>
+        <p>Pilih paket yang sesuai dengan kebutuhan dan target Anda</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="program-banner">
+              <div class="banner-image">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop" alt="Paket Tahunan" class="img-fluid">
+                <div class="banner-badge">
+                  <span class="badge-text">Terpopuler</span>
+                </div>
+              </div>
+              <div class="banner-info">
+                <div class="program-header">
+                  <h3>Paket Tahunan (VIP)</h3>
+                  <div class="program-stats">
+                    <span><i class="bi bi-people-fill"></i> 450+ Member Aktif</span>
+                    <span><i class="bi bi-star-fill"></i> Best Value</span>
+                  </div>
+                </div>
+                <p>Nikmati akses tanpa batas ke semua fasilitas gym, gratis konsultasi gizi bulanan, dan bebas mengikuti
+                  seluruh group class yang tersedia setiap hari.</p>
+                <div class="program-details">
+                  <div class="detail-item">
+                    <i class="bi bi-calendar-check"></i>
+                    <span>Durasi: 12 Bulan</span>
+                  </div>
+                  <div class="detail-item">
+                    <i class="bi bi-tag-fill"></i>
+                    <span>Diskon Khusus</span>
+                  </div>
+                </div>
+                <a href="#" class="discover-btn">Lihat Detail Paket</a>
+              </div>
+            </div>
+          </div><!-- End Program Banner -->
+
+          <div class="col-lg-6">
+            <div class="programs-grid">
+              <div class="row g-3">
+                <div class="col-12" data-aos="fade-left" data-aos-delay="200">
+                  <div class="program-item">
+                    <div class="item-icon">
+                      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop" alt="Paket Bulanan" class="img-fluid" style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <div class="item-content">
+                      <h4>Paket Bulanan Reguler</h4>
+                      <p>Akses gym dan fasilitas kardio lengkap selama 1 bulan penuh tanpa batasan jam kunjung.</p>
+                      <div class="meta-info">
+                        <span>1 Bulan</span>
+                        <span>Basic Access</span>
+                      </div>
+                    </div>
+                    <div class="item-arrow">
+                      <i class="bi bi-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-left" data-aos-delay="300">
+                  <div class="program-item">
+                    <div class="item-icon">
+                      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop" alt="Paket Pelajar" class="img-fluid" style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <div class="item-content">
+                      <h4>Paket Pelajar & Mahasiswa</h4>
+                      <p>Dapatkan harga spesial dengan menunjukkan kartu pelajar aktif. Sehat lebih terjangkau!</p>
+                      <div class="meta-info">
+                        <span>Bebas Pilih</span>
+                        <span>Student ID</span>
+                      </div>
+                    </div>
+                    <div class="item-arrow">
+                      <i class="bi bi-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-left" data-aos-delay="400">
+                  <div class="program-item">
+                    <div class="item-icon">
+                      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop" alt="Paket Keluarga" class="img-fluid" style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <div class="item-content">
+                      <h4>Paket Family / Pasangan</h4>
+                      <p>Berlatih bersama orang terdekat lebih menyenangkan dan pastinya jauh lebih hemat.</p>
+                      <div class="meta-info">
+                        <span>Minimal 2 Orang</span>
+                        <span>Family Plan</span>
+                      </div>
+                    </div>
+                    <div class="item-arrow">
+                      <i class="bi bi-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12" data-aos="fade-left" data-aos-delay="500">
+                  <div class="program-item">
+                    <div class="item-icon">
+                      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop" alt="Paket Harian" class="img-fluid" style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                    </div>
+                    <div class="item-content">
+                      <h4>Paket Harian (Daily Pass)</h4>
+                      <p>Cocok untuk Anda yang sedang berlibur atau ingin mencoba alat fitness kami terlebih dahulu.</p>
+                      <div class="meta-info">
+                        <span>1 Hari</span>
+                        <span>Pay Per Visit</span>
+                      </div>
+                    </div>
+                    <div class="item-arrow">
+                      <i class="bi bi-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Programs Grid -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Programs Section -->
+
+    <!-- Students Life Block Section -->
+    <section id="students-life-block" class="students-life-block section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Fasilitas & Layanan Kami</h2>
+        <p>Pengalaman berlatih maksimal dengan peralatan terbaik di kelasnya</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center g-5 mb-5">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="hero-image-wrapper">
+              <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1374&auto=format&fit=crop" alt="Gym Facilities" class="img-fluid main-image">
+              <div class="floating-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card-icon">
+                  <i class="bi bi-speedometer2"></i>
+                </div>
+                <div class="card-content">
+                  <span class="card-number">Grade A</span>
+                  <span class="card-label">Kualitas Alat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="content-wrapper">
+              <div class="section-badge" data-aos="fade-up" data-aos-delay="350">
+                <span>Fasilitas Kami</span>
+              </div>
+              <h2 data-aos="fade-up" data-aos-delay="400">Lingkungan Berlatih yang Nyaman, Bersih, dan Mendukung</h2>
+              <p class="lead-text" data-aos="fade-up" data-aos-delay="450">Kami mengerti bahwa kenyamanan adalah kunci
+                konsistensi. FitLife dirancang khusus dengan sistem sirkulasi udara mutakhir, loker aman, hingga area
+                bersantai.</p>
+
+              <div class="info-grid" data-aos="fade-up" data-aos-delay="500">
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="bi bi-droplet-fill"></i>
+                  </div>
+                  <div class="info-text">
+                    <strong>Kamar Mandi & Loker</strong>
+                    <span>Kamar mandi air panas, handuk bersih, dan loker digital.</span>
+                  </div>
+                </div>
+
+                <div class="info-item">
+                  <div class="info-icon">
+                    <i class="bi bi-cup-hot-fill"></i>
+                  </div>
+                  <div class="info-text">
+                    <strong>Protein Bar & Cafe</strong>
+                    <span>Isi ulang tenaga Anda dengan pilihan minuman sehat dan suplemen.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-section" data-aos="fade-up" data-aos-delay="600">
+                <a href="#" class="btn-primary">Lihat Galeri Kami</a>
+                <a href="#" class="btn-link">
+                  <i class="bi bi-play-circle"></i>
+                  <span>Tur Virtual Gym</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="activities-showcase">
+          <div class="row g-4">
+            <div class="col-lg-8" data-aos="fade-right" data-aos-delay="200">
+              <div class="featured-activity">
+                <div class="activity-media">
+                  <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop" alt="Weight Area" class="img-fluid">
+                  <div class="activity-overlay">
+                    <div class="overlay-content">
+                      <h4>Free Weight Area Luas</h4>
+                      <p>Area khusus dengan dumbel lengkap, squat rack, dan bangku yang cukup agar Anda tidak perlu
+                        antre lama.</p>
+                      <a href="#" class="overlay-btn">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4" data-aos="fade-left" data-aos-delay="300">
+              <div class="activities-list">
+                <div class="activity-item" data-aos="slide-up" data-aos-delay="350">
+                  <div class="activity-thumb">
+                    <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?q=80&w=1374&auto=format&fit=crop" alt="Cardio Zone" class="img-fluid" style="width: 80px; height: 80px; object-fit: cover;">
+                  </div>
+                  <div class="activity-info">
+                    <h6>Zona Kardio Modern</h6>
+                    <p>Treadmill dan elliptical terbaru</p>
+                  </div>
+                </div>
+
+                <div class="activity-item" data-aos="slide-up" data-aos-delay="400">
+                  <div class="activity-thumb">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1470&auto=format&fit=crop" alt="Studio Kelas" class="img-fluid" style="width: 80px; height: 80px; object-fit: cover;">
+                  </div>
+                  <div class="activity-info">
+                    <h6>Studio Kelas Akustik</h6>
+                    <p>Area kelas aerobik ber-AC sejuk</p>
+                  </div>
+                </div>
+
+                <div class="activity-item" data-aos="slide-up" data-aos-delay="450">
+                  <div class="activity-thumb">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1520&auto=format&fit=crop" alt="Recovery Area" class="img-fluid" style="width: 80px; height: 80px; object-fit: cover;">
+                  </div>
+                  <div class="activity-info">
+                    <h6>Zona Pemulihan</h6>
+                    <p>Alat pijat dan area peregangan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Students Life Block Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimoni Member</h2>
+        <p>Apa kata mereka yang telah bertransformasi bersama FitLife?</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonial-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 4000
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 2
+                },
+                "1200": {
+                  "slidesPerView": 3
+                }
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <!-- Testimonial Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-header">
+                  <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>Berkat bimbingan personal trainer di FitLife, saya berhasil menurunkan berat badan 15 kg dalam 4
+                    bulan. Fasilitasnya sangat bersih dan suasananya sangat mendukung!</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Jessica Martinez</h5>
+                  <span>Member - Program Fat Loss</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+            <!-- Testimonial Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="testimonial-header">
+                  <img src="assets/img/person/person-m-8.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>Alat-alatnya sangat lengkap, terutama area free weight-nya. Tidak perlu antre lama meskipun di jam
+                    sibuk. Komunitasnya juga sangat asyik!</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>David Rodriguez</h5>
+                  <span>Member - Bodybuilding</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+            <!-- Testimonial Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="testimonial-header">
+                  <img src="assets/img/person/person-f-6.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>Kelas yoga dan pilates di sini benar-benar mengubah postur tubuh saya yang sering pegal karena bekerja di depan laptop seharian. Instrukturnya sangat telaten dan sabar.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Amanda Wilson</h5>
+                  <span>Member - Kelas Yoga</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+            <!-- Testimonial Slide 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="500">
+                <div class="testimonial-header">
+                  <img src="assets/img/person/person-m-12.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>Fasilitas terbaik yang pernah saya temui! Saya paling suka dengan alat kardionya yang terintegrasi langsung dengan aplikasi sehingga bisa melacak perkembangan olahraga saya.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Ryan Thompson</h5>
+                  <span>Member - Reguler</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+            <!-- Testimonial Slide 5 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="600">
+                <div class="testimonial-header">
+                  <img src="assets/img/person/person-f-10.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <div class="testimonial-body">
+                  <p>Lingkungan di FitLife sangat inklusif. Saya yang awalnya malu nge-gym merasa sangat diterima dan kini punya banyak teman seperjuangan untuk hidup sehat bersama.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Rachel Chen</h5>
+                  <span>Member - Zumba Class</span>
+                  <div class="quote-icon">
+                    <i class="bi bi-chat-quote-fill"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+          </div>
+
+          <div class="swiper-navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="intro-content" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="section-heading">Transformasi Bersama FitLife</h2>
+              <p class="section-description">Angka tidak pernah bohong. Kami berkomitmen untuk terus memberikan
+                fasilitas terbaik demi mencapai hasil yang optimal untuk setiap member kami.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-4">
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="metric-card" data-aos="flip-left" data-aos-delay="300">
+              <div class="metric-header">
+                <div class="metric-icon-wrapper">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <div class="metric-value">
+                  <span data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="1"
+                    class="purecounter"></span>+
+                </div>
+              </div>
+              <div class="metric-info">
+                <h4>Member Aktif</h4>
+                <p>Bergabung dalam komunitas sehat</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="metric-card" data-aos="flip-left" data-aos-delay="400">
+              <div class="metric-header">
+                <div class="metric-icon-wrapper">
+                  <i class="bi bi-building"></i>
+                </div>
+                <div class="metric-value">
+                  <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                </div>
+              </div>
+              <div class="metric-info">
+                <h4>Cabang Gym</h4>
+                <p>Tersebar di berbagai kota besar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="metric-card" data-aos="flip-left" data-aos-delay="500">
+              <div class="metric-header">
+                <div class="metric-icon-wrapper">
+                  <i class="bi bi-trophy-fill"></i>
+                </div>
+                <div class="metric-value">
+                  <span data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="1"
+                    class="purecounter"></span>+
+                </div>
+              </div>
+              <div class="metric-info">
+                <h4>Penghargaan & Prestasi</h4>
+                <p>Pusat kebugaran terpercaya</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6">
+            <div class="metric-card" data-aos="flip-left" data-aos-delay="600">
+              <div class="metric-header">
+                <div class="metric-icon-wrapper">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <div class="metric-value">
+                  <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1"
+                    class="purecounter"></span>+
+                </div>
+              </div>
+              <div class="metric-info">
+                <h4>Instruktur Ahli</h4>
+                <p>Pelatih bersertifikasi internasional</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="highlights-section" data-aos="fade-up" data-aos-delay="700">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="highlights-content">
+                    <h3 class="highlights-title">Membangun Kekuatan Anda Sejak Hari Ini</h3>
+                    <p class="highlights-text">Kami percaya bahwa perubahan besar dimulai dari langkah pertama. Fasilitas dan program kami dirancang khusus agar Anda mencapai potensi maksimal dalam setiap sesi latihan.</p>
+                    <div class="highlights-features">
+                      <div class="feature-item" data-aos="fade-right" data-aos-delay="800">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Program yang Dipersonalisasi</span>
+                      </div>
+                      <div class="feature-item" data-aos="fade-right" data-aos-delay="900">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Instruktur Tersertifikasi</span>
+                      </div>
+                      <div class="feature-item" data-aos="fade-right" data-aos-delay="1000">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Komunitas Pendukung</span>
+                      </div>
+                    </div>
+                    <div class="highlights-cta">
+                      <a href="#" class="cta-btn primary">Jelajahi Program</a>
+                      <a href="#" class="cta-btn secondary">Jadwal Kelas</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="highlights-gallery">
+                    <div class="gallery-grid">
+                      <div class="gallery-item large" data-aos="zoom-in" data-aos-delay="800">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1470&auto=format&fit=crop" alt="Gym Area" class="img-fluid"
+                          loading="lazy">
+                        <div class="gallery-overlay">
+                          <h5>Area Gym Modern</h5>
+                        </div>
+                      </div>
+                      <div class="gallery-item small" data-aos="zoom-in" data-aos-delay="900">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop" alt="Member" class="img-fluid" loading="lazy">
+                        <div class="gallery-overlay">
+                          <h6>Aktif Berolahraga</h6>
+                        </div>
+                      </div>
+                      <div class="gallery-item small" data-aos="zoom-in" data-aos-delay="1000">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop" alt="Trainer" class="img-fluid" loading="lazy">
+                        <div class="gallery-overlay">
+                          <h6>Pelatih Ahli</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Recent News Section -->
+    <section id="recent-news" class="recent-news section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blog & Artikel Kesehatan</h2>
+        <p>Tips, trik, dan berita terbaru seputar dunia fitness dan gaya hidup sehat</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="post-item d-flex">
+              <div class="post-img">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1453&auto=format&fit=crop" alt="" class="img-fluid" loading="lazy">
+              </div>
+
+              <div class="post-content flex-grow-1">
+                <a href="#" class="category">Nutrisi</a>
+
+                <h2 class="post-title">
+                  <a href="#">5 Makanan Terbaik Sebelum Latihan</a>
+                </h2>
+
+                <p class="post-description">
+                  Memilih makanan yang tepat sebelum nge-gym sangat krusial untuk memberikan energi dan menghindari
+                  kelelahan otot.
+                </p>
+
+                <div class="post-meta">
+                  <div class="post-author">
+                    <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid">
+                    <span class="author-name">Lina Chen (Ahli Gizi)</span>
+                  </div>
+                  <span class="post-date">Okt 15, 2026</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post item -->
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="post-item d-flex">
+              <div class="post-img">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop" alt="" class="img-fluid" loading="lazy">
+              </div>
+
+              <div class="post-content flex-grow-1">
+                <a href="#" class="category">Tips Latihan</a>
+
+                <h2 class="post-title">
+                  <a href="#">Cara Melakukan Squat dengan Benar</a>
+                </h2>
+
+                <p class="post-description">
+                  Hindari cedera lutut dan punggung dengan mempelajari teknik dasar squat yang aman untuk pemula maupun profesional.
+                </p>
+
+                <div class="post-meta">
+                  <div class="post-author">
+                    <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid">
+                    <span class="author-name">Sofia Rodriguez</span>
+                  </div>
+                  <span class="post-date">Apr 22, 2025</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post item -->
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <article class="post-item d-flex">
+              <div class="post-img">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop" alt="" class="img-fluid" loading="lazy">
+              </div>
+
+              <div class="post-content flex-grow-1">
+                <a href="#" class="category">Kesehatan</a>
+
+                <h2 class="post-title">
+                  <a href="#">Pentingnya Istirahat Otot (Rest Day)</a>
+                </h2>
+
+                <p class="post-description">
+                  Memberikan waktu bagi otot untuk pulih sama pentingnya dengan sesi latihan itu sendiri. Berikut panduannya!
+                </p>
+
+                <div class="post-meta">
+                  <div class="post-author">
+                    <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid">
+                    <span class="author-name">Lucas Thompson</span>
+                  </div>
+                  <span class="post-date">May 8, 2025</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post item -->
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="400">
+            <article class="post-item d-flex">
+              <div class="post-img">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop" alt="" class="img-fluid" loading="lazy">
+              </div>
+
+              <div class="post-content flex-grow-1">
+                <a href="#" class="category">Motivasi</a>
+
+                <h2 class="post-title">
+                  <a href="#">Cara Menjaga Semangat Nge-Gym</a>
+                </h2>
+
+                <p class="post-description">
+                  Sering merasa malas setelah satu bulan berolahraga? Temukan rahasia konsistensi dari para ahli kami.
+                </p>
+
+                <div class="post-meta">
+                  <div class="post-author">
+                    <img src="assets/img/person/person-f-14.webp" alt="" class="img-fluid">
+                    <span class="author-name">Emma Patel</span>
+                  </div>
+                  <span class="post-date">Jun 30, 2025</span>
+                </div>
+              </div>
+            </article>
+          </div><!-- End post item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Recent News Section -->
+
+    <!-- Events Section -->
+    <section id="events" class="events section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Jadwal Group Class</h2>
+        <p>Ikuti kelas-kelas spesial kami untuk hasil latihan yang lebih maksimal dan menyenangkan</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1470&auto=format&fit=crop" alt="Workshop" class="img-fluid">
+                <div class="event-date-overlay">
+                  <span class="date">MAR<br>18</span>
+                </div>
+              </div>
+              <div class="event-details">
+                <div class="event-category">
+                  <span class="badge academic">Cardio</span>
+                  <span class="event-time">18:00 WIB</span>
+                </div>
+                <h3>Zumba Fitness Party</h3>
+                <p>Bakar kalori dengan gerakan tarian yang menyenangkan diiringi musik Latin yang energik. Cocok untuk
+                  semua level.</p>
+                <div class="event-info">
+                  <div class="info-row">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Studio Kelas 1</span>
+                  </div>
+                  <div class="info-row">
+                    <i class="bi bi-people"></i>
+                    <span>Maks 30 Peserta</span>
+                  </div>
+                </div>
+                <div class="event-footer">
+                  <a href="#" class="register-btn">Booking Kelas</a>
+                  <div class="event-share">
+                    <i class="bi bi-share"></i>
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop" alt="Tournament" class="img-fluid">
+                <div class="event-date-overlay">
+                  <span class="date">APR<br>05</span>
+                </div>
+              </div>
+              <div class="event-details">
+                <div class="event-category">
+                  <span class="badge sports">Kekuatan</span>
+                  <span class="event-time">09:00 WIB</span>
+                </div>
+                <h3>Weightlifting Masterclass</h3>
+                <p>Pelajari postur yang tepat untuk mengangkat beban berat dengan instruktur bersertifikat kami.</p>
+                <div class="event-info">
+                  <div class="info-row">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Area Free Weight</span>
+                  </div>
+                  <div class="info-row">
+                    <i class="bi bi-people"></i>
+                    <span>Maks 15 Peserta</span>
+                  </div>
+                </div>
+                <div class="event-footer">
+                  <a href="#" class="register-btn">Booking Kelas</a>
+                  <div class="event-share">
+                    <i class="bi bi-share"></i>
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1520&auto=format&fit=crop" alt="Art Exhibition" class="img-fluid">
+                <div class="event-date-overlay">
+                  <span class="date">APR<br>12</span>
+                </div>
+              </div>
+              <div class="event-details">
+                <div class="event-category">
+                  <span class="badge arts">Yoga</span>
+                  <span class="event-time">18:00 WIB</span>
+                </div>
+                <h3>Vinyasa Yoga Reguler</h3>
+                <p>Tenangkan pikiran dan regangkan otot Anda setelah seharian bekerja keras.</p>
+                <div class="event-info">
+                  <div class="info-row">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Studio Yoga (Lt. 2)</span>
+                  </div>
+                  <div class="info-row">
+                    <i class="bi bi-people"></i>
+                    <span>Terbuka untuk Umum</span>
+                  </div>
+                </div>
+                <div class="event-footer">
+                  <a href="#" class="register-btn">Booking Kelas</a>
+                  <div class="event-share">
+                    <i class="bi bi-share"></i>
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1470&auto=format&fit=crop" alt="Science Fair" class="img-fluid">
+                <div class="event-date-overlay">
+                  <span class="date">MAY<br>03</span>
+                </div>
+              </div>
+              <div class="event-details">
+                <div class="event-category">
+                  <span class="badge academic">HIIT</span>
+                  <span class="event-time">10:00 WIB</span>
+                </div>
+                <h3>HIIT Weekend Challenge</h3>
+                <p>Tantang diri Anda dalam sesi High Intensity Interval Training bersama komunitas FitLife!</p>
+                <div class="event-info">
+                  <div class="info-row">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Area Outdoor</span>
+                  </div>
+                  <div class="info-row">
+                    <i class="bi bi-people"></i>
+                    <span>Maks 40 Peserta</span>
+                  </div>
+                </div>
+                <div class="event-footer">
+                  <a href="#" class="register-btn">Booking Kelas</a>
+                  <div class="event-share">
+                    <i class="bi bi-share"></i>
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1470&auto=format&fit=crop" alt="Community Event" class="img-fluid">
+                <div class="event-date-overlay">
+                  <span class="date">MAY<br>15</span>
+                </div>
+              </div>
+              <div class="event-details">
+                <div class="event-category">
+                  <span class="badge community">Komunitas</span>
+                  <span class="event-time">15:00 WIB</span>
+                </div>
+                <h3>FitLife Family Gathering</h3>
+                <p>Ajang kumpul seluruh member untuk berolahraga ringan bersama dan berbagi inspirasi hidup sehat.</p>
+                <div class="event-info">
+                  <div class="info-row">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Area Bersantai / Cafe</span>
+                  </div>
+                  <div class="info-row">
+                    <i class="bi bi-people"></i>
+                    <span>Semua Member</span>
+                  </div>
+                </div>
+                <div class="event-footer">
+                  <a href="#" class="register-btn">Booking Kelas</a>
+                  <div class="event-share">
+                    <i class="bi bi-share"></i>
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="event-item">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470&auto=format&fit=crop" alt="Music Concert" class="img-fluid">
+                <div class="event-date-overlay">
+                  <span class="date">JUN<br>02</span>
+                </div>
+              </div>
+              <div class="event-details">
+                <div class="event-category">
+                  <span class="badge arts">Kardio</span>
+                  <span class="event-time">19:30 WIB</span>
+                </div>
+                <h3>Spinning Class Marathon</h3>
+                <p>Latihan sepeda statis intensitas tinggi selama 90 menit penuh diiringi musik pemompa semangat!</p>
+                <div class="event-info">
+                  <div class="info-row">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Ruang Sepeda Statis</span>
+                  </div>
+                  <div class="info-row">
+                    <i class="bi bi-people"></i>
+                    <span>20 Sepeda</span>
+                  </div>
+                </div>
+                <div class="event-footer">
+                  <a href="#" class="register-btn">Booking Kelas</a>
+                  <div class="event-share">
+                    <i class="bi bi-share"></i>
+                    <i class="bi bi-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="events-navigation" data-aos="fade-up" data-aos-delay="500">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">Semua Kelas</button>
+                <button class="filter-tab" data-filter="academic">Kardio & HIIT</button>
+                <button class="filter-tab" data-filter="sports">Kekuatan (Strength)</button>
+                <button class="filter-tab" data-filter="arts">Yoga & Fleksibilitas</button>
+                <button class="filter-tab" data-filter="community">Komunitas</button>
+              </div>
+            </div>
+            <div class="col-md-4 text-end">
+              <a href="#" class="view-calendar-btn">
+                <i class="bi bi-calendar3"></i>
+                Lihat Kalender
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">FitLife Gym</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Jenderal Sudirman No. 123</p>
+            <p>Jakarta Selatan, DKI Jakarta 12190</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 812 3456 7890</span></p>
+            <p><strong>Email:</strong> <span>info@fitlifegym.co.id</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="paket.html">Paket Membership</a></li>
+            <li><a href="group-class.html">Group Class</a></li>
+            <li><a href="galeri.html">Galeri Foto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Program Kami</h4>
+          <ul>
+            <li><a href="personal-trainer.html">Personal Trainer</a></li>
+            <li><a href="group-class.html">Group Fitness</a></li>
+            <li><a href="program-penurunan-berat-badan.html">Weight Loss Camp</a></li>
+            <li><a href="program-pembentukan-otot.html">Bodybuilding</a></li>
+            <li><a href="program.html">Semua Program</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Fasilitas</h4>
+          <ul>
+            <li><a href="galeri.html">Free Weight Area</a></li>
+            <li><a href="galeri.html">Cardio Zone</a></li>
+            <li><a href="galeri.html">Studio Kelas</a></li>
+            <li><a href="galeri.html">Locker & Sauna</a></li>
+            <li><a href="galeri.html">Protein Bar</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Komunitas</h4>
+          <ul>
+            <li><a href="blog.html">Blog & Artikel</a></li>
+            <li><a href="#">Kisah Sukses</a></li>
+            <li><a href="#">Event Bulanan</a></li>
+            <li><a href="#">Karir di FitLife</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">FitLife Gym</strong> <span>All Rights Reserved</span>
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" title="Chat Admin di WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>

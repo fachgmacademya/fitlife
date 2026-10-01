@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Blog &amp; Artikel Kebugaran | FitLife Gym</title>
+  <meta name="description" content="Kumpulan artikel edukatif, panduan latihan beban, nutrisi sehat, tips pembakaran lemak, dan tips gaya hidup fit dari para ahli kebugaran FitLife Gym.">
+  <meta name="keywords" content="blog fitness, tips gym, pola makan sehat, suplemen fitness, latihan angkat beban, panduan diet sehat">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Fitness Theme CSS -->
+  <style>
+    :root {
+      --primary-color: #ff3b3b;
+      --secondary-color: #1a1a1a;
+      --accent-color: #ff6b6b;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background-color: rgba(20, 20, 20, 0.95) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+      transition: all 0.3s ease;
+    }
+
+    /* Footer Sitename Contrast Fix */
+    .footer .sitename,
+    .footer .footer-about .logo span,
+    .footer .copyright .sitename {
+      color: #011e2c !important;
+      font-weight: 700 !important;
+    }
+
+    /* Desktop Navigation */
+    @media (min-width: 1200px) {
+      .navmenu > ul > li > a,
+      .header .sitename {
+        color: #ffffff !important;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .navmenu > ul > li > a:hover,
+      .navmenu > ul > li > a.active {
+        color: var(--primary-color) !important;
+      }
+
+      /* Desktop Dropdown Menu Styling */
+      .navmenu .dropdown > ul {
+        background-color: #ffffff !important;
+        border-radius: 10px !important;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18) !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        padding: 8px 0 !important;
+        min-width: 230px !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        top: 130% !important;
+        transition: all 0.25s ease-in-out !important;
+      }
+
+      .navmenu .dropdown.dropdown-open > ul {
+        opacity: 1 !important;
+        visibility: visible !important;
+        top: 100% !important;
+      }
+
+      .navmenu .dropdown ul li a {
+        color: #1e293b !important;
+        font-size: 14.5px !important;
+        font-weight: 500 !important;
+        padding: 10px 20px !important;
+        display: block !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .navmenu .dropdown ul li a:hover {
+        color: var(--primary-color) !important;
+        background-color: #fff1f1 !important;
+        padding-left: 24px !important;
+      }
+
+      .navmenu .dropdown ul li:last-child a {
+        border-top: 1px solid #f1f5f9 !important;
+        color: var(--primary-color) !important;
+        font-weight: 600 !important;
+      }
+    }
+
+    /* Mobile Navigation Styling */
+    @media (max-width: 1199px) {
+      .mobile-nav-toggle {
+        color: #ffffff !important;
+        font-size: 32px !important;
+        cursor: pointer;
+      }
+
+      .navmenu ul {
+        position: fixed !important;
+        top: 70px !important;
+        left: 15px !important;
+        right: 15px !important;
+        max-height: calc(100vh - 90px) !important;
+        overflow-y: auto !important;
+        background-color: #ffffff !important;
+        border-radius: 14px !important;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3) !important;
+        padding: 15px !important;
+        margin: 0 !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      }
+
+      .navmenu ul li a {
+        color: #1e293b !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        padding: 12px 15px !important;
+        border-bottom: 1px solid #f1f5f9 !important;
+      }
+
+      .navmenu ul li a:hover,
+      .navmenu ul li a.active {
+        color: var(--primary-color) !important;
+      }
+
+      .navmenu .dropdown ul {
+        background-color: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 8px !important;
+        margin: 8px 10px 12px 10px !important;
+        padding: 6px 0 !important;
+        box-shadow: none !important;
+      }
+
+      .navmenu .dropdown.dropdown-open > ul {
+        display: block !important;
+      }
+
+      .navmenu .dropdown ul li a {
+        font-size: 14.5px !important;
+        color: #334155 !important;
+        padding: 8px 18px !important;
+        border-bottom: none !important;
+      }
+
+      .navmenu .dropdown ul li a:hover {
+        color: var(--primary-color) !important;
+        background-color: transparent !important;
+      }
+
+      .navmenu .dropdown ul li:last-child a {
+        color: var(--primary-color) !important;
+        font-weight: 600 !important;
+      }
+
+      .navmenu .toggle-dropdown {
+        color: #1e293b !important;
+      }
+    }
+
+    .navmenu .dropdown.dropdown-open > a i.toggle-dropdown {
+      transform: rotate(180deg);
+    }
+
+    .page-title {
+      margin-top: 85px !important;
+      padding: 55px 0 45px 0 !important;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(26, 26, 26, 0.92) 100%),
+                  url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop') center center / cover no-repeat !important;
+      border-bottom: 3px solid var(--primary-color) !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25) !important;
+      position: relative;
+    }
+
+    @media (max-width: 992px) {
+      .page-title {
+        margin-top: 75px !important;
+        padding: 40px 0 32px 0 !important;
+      }
+    }
+
+    .page-title h1 {
+      color: #ffffff !important;
+      font-size: 2.2rem !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.5px;
+      margin: 0 !important;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .page-title h1 {
+        font-size: 1.75rem !important;
+        margin-bottom: 12px !important;
+      }
+    }
+
+    .page-title .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14.5px;
+      font-weight: 500;
+      align-items: center;
+    }
+
+    .page-title .breadcrumbs ol li a {
+      color: #cbd5e1 !important;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .page-title .breadcrumbs ol li a:hover {
+      color: var(--primary-color) !important;
+    }
+
+    .page-title .breadcrumbs ol li.current {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+    }
+
+    .page-title .breadcrumbs ol li+li::before {
+      content: "/";
+      display: inline-block;
+      padding: 0 10px;
+      color: #64748b !important;
+    }
+
+    /* Blog Style Polish */
+    .news-hero .featured-post {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .news-hero .featured-post img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .news-hero .post-overlay {
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    }
+
+    .news-hero .secondary-post {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+
+    .news-hero .secondary-post:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 59, 59, 0.3);
+    }
+
+    .news-hero .secondary-post .post-image {
+      height: 190px;
+      overflow: hidden;
+    }
+
+    .news-hero .secondary-post .post-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .news-hero .secondary-post .post-content {
+      padding: 20px;
+    }
+
+    .news-hero .secondary-post .category,
+    .featured-post .category {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .news-tabs {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .news-tabs .nav-tabs .nav-link {
+      color: #64748b;
+      font-weight: 600;
+      border: none;
+      padding: 10px 14px;
+    }
+
+    .news-tabs .nav-tabs .nav-link.active {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+      background: transparent;
+    }
+
+    .tab-post {
+      padding: 12px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .tab-post:last-child {
+      border-bottom: none;
+    }
+
+    .tab-post img {
+      border-radius: 8px;
+      height: 70px;
+      width: 70px;
+      object-fit: cover;
+    }
+
+    .tab-post .category {
+      font-size: 11px;
+      color: var(--primary-color);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .tab-post .post-title {
+      font-size: 13.5px;
+      margin: 4px 0;
+      line-height: 1.4;
+    }
+
+    .tab-post .post-title a {
+      color: #1e293b;
+      transition: color 0.2s ease;
+      text-decoration: none;
+    }
+
+    .tab-post .post-title a:hover {
+      color: var(--primary-color);
+    }
+
+    .news-posts article {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      overflow: hidden;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+
+    .news-posts article:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 59, 59, 0.3);
+    }
+
+    .news-posts .post-img {
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      height: 200px;
+    }
+
+    .news-posts .post-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .news-posts .post-category {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .news-posts .title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .news-posts .title a {
+      color: #0f172a;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .news-posts .title a:hover {
+      color: var(--primary-color);
+    }
+
+    /* Floating Scroll-Top: bottom-left on desktop, above WA on mobile */
+    .scroll-top {
+      left: 20px !important;
+      right: auto !important;
+      bottom: 25px !important;
+      z-index: 99999 !important;
+      border-radius: 50% !important;
+      width: 48px !important;
+      height: 48px !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .floating-wa {
+      position: fixed;
+      bottom: 25px !important;
+      right: 25px !important;
+      width: 55px;
+      height: 55px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      z-index: 9999;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      transition: 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    .floating-wa:hover {
+      background-color: #128c7e;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .scroll-top {
+        left: auto !important;
+        right: 15px !important;
+        bottom: 85px !important;
+        width: 44px !important;
+        height: 44px !important;
+      }
+
+      .floating-wa {
+        bottom: 20px !important;
+        right: 15px !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 24px !important;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+
+</head>
+
+<body class="news-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">FitLife</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle-btn"><span>Paket</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="paket-harian.html">Paket Harian</a></li>
+              <li><a href="paket-bulanan.html">Paket Bulanan</a></li>
+              <li><a href="paket-tahunan.html">Paket Tahunan (VIP)</a></li>
+              <li><a href="paket.html">Lihat Semua Paket</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle-btn"><span>Program</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="group-class.html">Group Class</a></li>
+              <li><a href="personal-trainer.html">Personal Trainer</a></li>
+              <li><a href="program-penurunan-berat-badan.html">Program Penurunan Berat Badan</a></li>
+              <li><a href="program-pembentukan-otot.html">Program Pembentukan Otot</a></li>
+              <li><a href="program.html">Lihat Semua Program</a></li>
+            </ul>
+          </li>
+
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Blog &amp; Edukasi Kebugaran</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="current">Blog</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- News/Blog Hero Section -->
+    <section id="news-hero" class="news-hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+          <!-- Main Content Area -->
+          <div class="col-lg-8">
+            <!-- Featured Article -->
+            <article class="featured-post position-relative mb-4" data-aos="fade-up">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1470&auto=format&fit=crop" alt="Panduan Progressive Overload" class="img-fluid">
+              <div class="post-overlay">
+                <div class="post-content">
+                  <div class="post-meta">
+                    <span class="category">Tips Latihan</span>
+                    <span class="date">01 Oktober 2026</span>
+                  </div>
+                  <h2 class="post-title">
+                    <a href="news-details.html">Panduan Lengkap Progressive Overload: Kunci Utama Membangun Otot Tanpa Cedera</a>
+                  </h2>
+                  <p class="post-excerpt">Pahami bagaimana prinsip peningkatan beban secara bertahap dan teratur dapat memaksimalkan hipertrofi otot serta mencegah fase stagnasi dalam rutinitas angkat beban Anda.</p>
+                  <div class="post-author">
+                    <span>Oleh</span>
+                    <a href="#">Rian Firmansyah (Head Coach)</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Secondary Articles -->
+            <div class="row g-4">
+              <div class="col-md-6">
+                <article class="secondary-post" data-aos="fade-up">
+                  <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" alt="Nutrisi Fitness" class="img-fluid">
+                  </div>
+                  <div class="post-content">
+                    <div class="post-meta mb-2">
+                      <span class="category">Nutrisi &amp; Diet</span>
+                      <span class="date text-muted ms-2">28 September 2026</span>
+                    </div>
+                    <h3 class="post-title">
+                      <a href="news-details.html">Kebutuhan Protein Harian: Berapa Banyak yang Sebenarnya Dibutuhkan Tubuh?</a>
+                    </h3>
+                    <div class="post-author mt-2">
+                      <span>Oleh</span>
+                      <a href="#">dr. Sarah Nadia</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="secondary-post" data-aos="fade-up" data-aos-delay="100">
+                  <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop" alt="Kardio HIIT" class="img-fluid">
+                  </div>
+                  <div class="post-content">
+                    <div class="post-meta mb-2">
+                      <span class="category">Kardio &amp; Fat Loss</span>
+                      <span class="date text-muted ms-2">25 September 2026</span>
+                    </div>
+                    <h3 class="post-title">
+                      <a href="news-details.html">HIIT vs LISS: Mana Metode Kardio yang Paling Efektif Bakar Lemak Perut?</a>
+                    </h3>
+                    <div class="post-author mt-2">
+                      <span>Oleh</span>
+                      <a href="#">Budi Santoso</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div><!-- End Main Content Area -->
+
+          <!-- Sidebar with Tabs -->
+          <div class="col-lg-4">
+            <div class="news-tabs" data-aos="fade-up" data-aos-delay="200">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#top-stories" type="button">Populer</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#trending" type="button">Trending</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#latest" type="button">Terbaru</button>
+                </li>
+              </ul>
+
+              <div class="tab-content mt-3">
+                <!-- Top Stories Tab -->
+                <div class="tab-pane fade show active" id="top-stories">
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=200&auto=format&fit=crop" alt="Workout Prep" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Pemanasan</span>
+                          <h4 class="post-title"><a href="news-details.html">Pemanasan Dinamis Sebelum Squat: Cegah Cedera Lutut</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Rian Firmansyah</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=200&auto=format&fit=crop" alt="Yoga Posture" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Fleksibilitas</span>
+                          <h4 class="post-title"><a href="news-details.html">5 Gerakan Yoga Praktis untuk Mengatasi Sakit Pinggang</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Maya Anggraini</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=200&auto=format&fit=crop" alt="Fat Loss Meal" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Diet Sehat</span>
+                          <h4 class="post-title"><a href="news-details.html">Strategi Meal Prep Sederhana untuk Pekerja Kantoran</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">dr. Sarah Nadia</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=200&auto=format&fit=crop" alt="Gym Motivation" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Mindset</span>
+                          <h4 class="post-title"><a href="news-details.html">Membangun Konsistensi Fitness: Dari Beban Jadi Kebiasaan</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Budi Santoso</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=200&auto=format&fit=crop" alt="Bench Press Form" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Teknik Latihan</span>
+                          <h4 class="post-title"><a href="news-details.html">Bench Press yang Benar: Hindari Cedera Bahu dan Rotator Cuff</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Rian Firmansyah</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Trending News Tab -->
+                <div class="tab-pane fade" id="trending">
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=200&auto=format&fit=crop" alt="Intermittent Fasting" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Gaya Hidup</span>
+                          <h4 class="post-title"><a href="news-details.html">Intermittent Fasting vs Defisit Kalori Konvensional</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">dr. Sarah Nadia</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=200&auto=format&fit=crop" alt="Creatine Facts" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Suplemen</span>
+                          <h4 class="post-title"><a href="news-details.html">Mitos dan Fakta Seputar Kreatin yang Wajib Anda Ketahui</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">dr. Sarah Nadia</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=200&auto=format&fit=crop" alt="Pilates Benefits" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Core Strength</span>
+                          <h4 class="post-title"><a href="news-details.html">Manfaat Mat Pilates untuk Memperkuat Otot Inti Perut</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Maya Anggraini</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=200&auto=format&fit=crop" alt="Deadlift Posture" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Teknik</span>
+                          <h4 class="post-title"><a href="news-details.html">Mengapa Deadlift Sangat Bagus untuk Postur dan Kekuatan Punggung</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Rian Firmansyah</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=200&auto=format&fit=crop" alt="Hydration Guide" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Kebugaran</span>
+                          <h4 class="post-title"><a href="news-details.html">Pengaruh Dehidrasi terhadap Penurunan Performa Angkat Beban</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Budi Santoso</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <!-- Latest News Tab -->
+                <div class="tab-pane fade" id="latest">
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=200&auto=format&fit=crop" alt="Rest Day" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Pemulihan</span>
+                          <h4 class="post-title"><a href="news-details.html">Tanda-tanda Tubuh Anda Membutuhkan Hari Istirahat (Rest Day)</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Rian Firmansyah</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=200&auto=format&fit=crop" alt="Morning Workout" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Jadwal</span>
+                          <h4 class="post-title"><a href="news-details.html">Latihan Pagi vs Malam Hari: Manakah Waktu yang Paling Optimal?</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Budi Santoso</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=200&auto=format&fit=crop" alt="Fiber Nutrition" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Pencernaan</span>
+                          <h4 class="post-title"><a href="news-details.html">Peran Serat Makanan dalam Menjaga Rasa Kenyang Saat Diet</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">dr. Sarah Nadia</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=200&auto=format&fit=crop" alt="Breathing Technique" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Teknik Napas</span>
+                          <h4 class="post-title"><a href="news-details.html">Valsalva Maneuver: Kapan Boleh Dipakai Saat Mengangkat Beban Berat</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Rian Firmansyah</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="tab-post">
+                    <div class="row g-0 align-items-center">
+                      <div class="col-3">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=200&auto=format&fit=crop" alt="Recovery Tools" class="img-fluid">
+                      </div>
+                      <div class="col-9 ps-3">
+                        <div class="post-content">
+                          <span class="category">Recovery</span>
+                          <h4 class="post-title"><a href="news-details.html">Manfaat Foam Rolling dan Sauna untuk Mengurangi Nyeri Otot (DOMS)</a></h4>
+                          <div class="post-author small text-muted">oleh <a href="#">Maya Anggraini</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /News Hero Section -->
+
+    <!-- News/Blog Posts Section -->
+    <section id="news-posts" class="news-posts section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop" alt="Tidur Berkualitas" class="img-fluid">
+              </div>
+
+              <p class="post-category">Pemulihan Tubuh</p>
+
+              <h2 class="title">
+                <a href="news-details.html">Pentingnya Kualitas Tidur Malam untuk Sintesis Protein dan Pertumbuhan Otot</a>
+              </h2>
+
+              <div class="d-flex align-items-center mt-3">
+                <img src="assets/img/person/person-m-4.webp" alt="Author" class="img-fluid post-author-img flex-shrink-0" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover;">
+                <div class="post-meta ms-3">
+                  <p class="post-author mb-0 fw-bold">Rian Firmansyah</p>
+                  <p class="post-date text-muted mb-0 small">
+                    <time datetime="2026-09-20">20 Sep 2026</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+
+              <div class="post-img">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800&auto=format&fit=crop" alt="Kesalahan Gym" class="img-fluid">
+              </div>
+
+              <p class="post-category">Panduan Pemula</p>
+
+              <h2 class="title">
+                <a href="news-details.html">5 Kesalahan Umum Pemula di Gym yang Membuat Hasil Latihan Tidak Maksimal</a>
+              </h2>
+
+              <div class="d-flex align-items-center mt-3">
+                <img src="assets/img/person/person-m-7.webp" alt="Author" class="img-fluid post-author-img flex-shrink-0" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover;">
+                <div class="post-meta ms-3">
+                  <p class="post-author mb-0 fw-bold">Budi Santoso</p>
+                  <p class="post-date text-muted mb-0 small">
+                    <time datetime="2026-09-15">15 Sep 2026</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article>
+
+              <div class="post-img">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" alt="Suplemen Fitness" class="img-fluid">
+              </div>
+
+              <p class="post-category">Nutrisi &amp; Suplemen</p>
+
+              <h2 class="title">
+                <a href="news-details.html">Kreatin dan Whey Protein: Panduan Lengkap Memilih Suplemen yang Aman dan Terbukti Ilmiah</a>
+              </h2>
+
+              <div class="d-flex align-items-center mt-3">
+                <img src="assets/img/person/person-f-9.webp" alt="Author" class="img-fluid post-author-img flex-shrink-0" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover;">
+                <div class="post-meta ms-3">
+                  <p class="post-author mb-0 fw-bold">dr. Sarah Nadia</p>
+                  <p class="post-date text-muted mb-0 small">
+                    <time datetime="2026-09-10">10 Sep 2026</time>
+                  </p>
+                </div>
+              </div>
+
+            </article>
+          </div><!-- End post list item -->
+
+        </div><!-- End recent posts list -->
+
+      </div>
+
+    </section><!-- /News Posts Section -->
+
+    <!-- Pagination 2 Section -->
+    <section id="pagination-2" class="pagination-2 section">
+
+      <div class="container">
+        <nav class="d-flex justify-content-center" aria-label="Navigasi Halaman">
+          <ul>
+            <li>
+              <a href="#" aria-label="Halaman Sebelumnya">
+                <i class="bi bi-arrow-left"></i>
+                <span class="d-none d-sm-inline">Sebelumnya</span>
+              </a>
+            </li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li>
+              <a href="#" aria-label="Halaman Berikutnya">
+                <span class="d-none d-sm-inline">Berikutnya</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </section><!-- /Pagination 2 Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">FitLife Gym</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Jenderal Sudirman No. 123</p>
+            <p>Jakarta Selatan, DKI Jakarta 12190</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 812 3456 7890</span></p>
+            <p><strong>Email:</strong> <span>info@fitlifegym.co.id</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="paket.html">Paket Membership</a></li>
+            <li><a href="group-class.html">Group Class</a></li>
+            <li><a href="galeri.html">Galeri Foto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Program Kami</h4>
+          <ul>
+            <li><a href="personal-trainer.html">Personal Trainer</a></li>
+            <li><a href="group-class.html">Group Fitness</a></li>
+            <li><a href="program-penurunan-berat-badan.html">Weight Loss Camp</a></li>
+            <li><a href="program-pembentukan-otot.html">Bodybuilding</a></li>
+            <li><a href="program.html">Semua Program</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Fasilitas</h4>
+          <ul>
+            <li><a href="#">Free Weight Area</a></li>
+            <li><a href="#">Cardio Zone</a></li>
+            <li><a href="#">Studio Kelas</a></li>
+            <li><a href="#">Locker &amp; Sauna</a></li>
+            <li><a href="#">Protein Bar</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Komunitas</h4>
+          <ul>
+            <li><a href="blog.html">Blog &amp; Artikel</a></li>
+            <li><a href="#">Kisah Sukses</a></li>
+            <li><a href="#">Event Bulanan</a></li>
+            <li><a href="#">Karir di FitLife</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">FitLife Gym</strong> <span>All Rights Reserved</span>
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top (Desktop: bottom-left, Mobile: above WA) -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" title="Chat Admin di WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

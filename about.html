@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tentang Kami | FitLife Gym & Fitness Center</title>
+  <meta name="description" content="Pelajari sejarah, visi misi, nilai utama, dan tim pelatih profesional di FitLife Gym. Kami berdedikasi membangun masyarakat Indonesia yang lebih sehat dan bugar.">
+  <meta name="keywords" content="tentang kami, fitlife gym, tim trainer gym, visi misi fitness, pelatih kebugaran jakarta">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Fitness Theme CSS -->
+  <style>
+    :root {
+      --primary-color: #ff3b3b;
+      --secondary-color: #1a1a1a;
+      --accent-color: #ff6b6b;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    .header {
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      z-index: 1000 !important;
+      background-color: rgba(20, 20, 20, 0.95) !important;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+      transition: all 0.3s ease;
+    }
+
+    /* Footer Sitename Contrast Fix */
+    .footer .sitename,
+    .footer .footer-about .logo span,
+    .footer .copyright .sitename {
+      color: #011e2c !important;
+      font-weight: 700 !important;
+    }
+
+    /* Desktop Navigation */
+    @media (min-width: 1200px) {
+      .navmenu > ul > li > a,
+      .header .sitename {
+        color: #ffffff !important;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .navmenu > ul > li > a:hover,
+      .navmenu > ul > li > a.active {
+        color: var(--primary-color) !important;
+      }
+
+      /* Desktop Dropdown Menu Styling */
+      .navmenu .dropdown > ul {
+        background-color: #ffffff !important;
+        border-radius: 10px !important;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18) !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        padding: 8px 0 !important;
+        min-width: 230px !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        top: 130% !important;
+        transition: all 0.25s ease-in-out !important;
+      }
+
+      .navmenu .dropdown.dropdown-open > ul {
+        opacity: 1 !important;
+        visibility: visible !important;
+        top: 100% !important;
+      }
+
+      .navmenu .dropdown ul li a {
+        color: #1e293b !important;
+        font-size: 14.5px !important;
+        font-weight: 500 !important;
+        padding: 10px 20px !important;
+        display: block !important;
+        transition: all 0.2s ease !important;
+      }
+
+      .navmenu .dropdown ul li a:hover {
+        color: var(--primary-color) !important;
+        background-color: #fff1f1 !important;
+        padding-left: 24px !important;
+      }
+
+      .navmenu .dropdown ul li:last-child a {
+        border-top: 1px solid #f1f5f9 !important;
+        color: var(--primary-color) !important;
+        font-weight: 600 !important;
+      }
+    }
+
+    /* Mobile Navigation Styling */
+    @media (max-width: 1199px) {
+      .mobile-nav-toggle {
+        color: #ffffff !important;
+        font-size: 32px !important;
+        cursor: pointer;
+      }
+
+      .navmenu ul {
+        position: fixed !important;
+        top: 70px !important;
+        left: 15px !important;
+        right: 15px !important;
+        max-height: calc(100vh - 90px) !important;
+        overflow-y: auto !important;
+        background-color: #ffffff !important;
+        border-radius: 14px !important;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3) !important;
+        padding: 15px !important;
+        margin: 0 !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      }
+
+      .navmenu ul li a {
+        color: #1e293b !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        padding: 12px 15px !important;
+        border-bottom: 1px solid #f1f5f9 !important;
+      }
+
+      .navmenu ul li a:hover,
+      .navmenu ul li a.active {
+        color: var(--primary-color) !important;
+      }
+
+      .navmenu .dropdown ul {
+        background-color: #f8fafc !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 8px !important;
+        margin: 8px 10px 12px 10px !important;
+        padding: 6px 0 !important;
+        box-shadow: none !important;
+      }
+
+      .navmenu .dropdown.dropdown-open > ul {
+        display: block !important;
+      }
+
+      .navmenu .dropdown ul li a {
+        font-size: 14.5px !important;
+        color: #334155 !important;
+        padding: 8px 18px !important;
+        border-bottom: none !important;
+      }
+
+      .navmenu .dropdown ul li a:hover {
+        color: var(--primary-color) !important;
+        background-color: transparent !important;
+      }
+
+      .navmenu .dropdown ul li:last-child a {
+        color: var(--primary-color) !important;
+        font-weight: 600 !important;
+      }
+
+      .navmenu .toggle-dropdown {
+        color: #1e293b !important;
+      }
+    }
+
+    .navmenu .dropdown.dropdown-open > a i.toggle-dropdown {
+      transform: rotate(180deg);
+    }
+
+    .page-title {
+      margin-top: 85px !important;
+      padding: 55px 0 45px 0 !important;
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.94) 0%, rgba(26, 26, 26, 0.92) 100%),
+                  url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop') center center / cover no-repeat !important;
+      border-bottom: 3px solid var(--primary-color) !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25) !important;
+      position: relative;
+    }
+
+    @media (max-width: 992px) {
+      .page-title {
+        margin-top: 75px !important;
+        padding: 40px 0 32px 0 !important;
+      }
+    }
+
+    .page-title h1 {
+      color: #ffffff !important;
+      font-size: 2.2rem !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.5px;
+      margin: 0 !important;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .page-title h1 {
+        font-size: 1.75rem !important;
+        margin-bottom: 12px !important;
+      }
+    }
+
+    .page-title .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 14.5px;
+      font-weight: 500;
+      align-items: center;
+    }
+
+    .page-title .breadcrumbs ol li a {
+      color: #cbd5e1 !important;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .page-title .breadcrumbs ol li a:hover {
+      color: var(--primary-color) !important;
+    }
+
+    .page-title .breadcrumbs ol li.current {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+    }
+
+    .page-title .breadcrumbs ol li+li::before {
+      content: "/";
+      display: inline-block;
+      padding: 0 10px;
+      color: #64748b !important;
+    }
+
+    /* Core Values card styling */
+    .value-card {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      border-radius: 14px !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05) !important;
+      padding: 30px 20px !important;
+      transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    }
+
+    .value-card:hover {
+      transform: translateY(-6px) !important;
+      box-shadow: 0 12px 30px rgba(255, 59, 59, 0.15) !important;
+      border-color: rgba(255, 59, 59, 0.3) !important;
+    }
+
+    .value-card .value-icon {
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 59, 59, 0.12) !important;
+      color: #ff3b3b !important;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .value-card h4 {
+      color: #111827 !important;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .value-card p {
+      color: #4b5563 !important;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Floating Scroll-Top: bottom-left on desktop, above WA on mobile */
+    .scroll-top {
+      left: 20px !important;
+      right: auto !important;
+      bottom: 25px !important;
+      z-index: 99999 !important;
+      border-radius: 50% !important;
+      width: 48px !important;
+      height: 48px !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .floating-wa {
+      position: fixed;
+      bottom: 25px !important;
+      right: 25px !important;
+      width: 55px;
+      height: 55px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      z-index: 9999;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      transition: 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    .floating-wa:hover {
+      background-color: #128c7e;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .scroll-top {
+        left: auto !important;
+        right: 15px !important;
+        bottom: 85px !important;
+        width: 44px !important;
+        height: 44px !important;
+      }
+
+      .floating-wa {
+        bottom: 20px !important;
+        right: 15px !important;
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 24px !important;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">FitLife</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="about.html" class="active">Tentang Kami</a></li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle-btn"><span>Paket</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="paket-harian.html">Paket Harian</a></li>
+              <li><a href="paket-bulanan.html">Paket Bulanan</a></li>
+              <li><a href="paket-tahunan.html">Paket Tahunan (VIP)</a></li>
+              <li><a href="paket.html">Lihat Semua Paket</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle-btn"><span>Program</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="group-class.html">Group Class</a></li>
+              <li><a href="personal-trainer.html">Personal Trainer</a></li>
+              <li><a href="program-penurunan-berat-badan.html">Program Penurunan Berat Badan</a></li>
+              <li><a href="program-pembentukan-otot.html">Program Pembentukan Otot</a></li>
+              <li><a href="program.html">Lihat Semua Program</a></li>
+            </ul>
+          </li>
+
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Tentang FitLife Gym</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li class="current">Tentang Kami</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- History Section -->
+    <section id="history" class="history section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+              <h3>Cerita Kami</h3>
+              <h2>Membangun Bangsa yang Lebih Bugar dan Berenergi</h2>
+              <p>Didirikan dengan tekad untuk mendobrak stigma bahwa olahraga kebugaran itu sulit dan mahal, FitLife Gym hadir sebagai pusat kebugaran terdepan di Indonesia. Kami menggabungkan fasilitas berteknologi modern, komunitas yang saling mendukung, dan pelatih profesional berstandar internasional.</p>
+
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>2015</h4>
+                    <p>Membuka cabang pertama dengan konsep boutique gym modern dan 100 member perdana di Jakarta Selatan.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>2018</h4>
+                    <p>Meluncurkan program Group Class eksklusif dan kemitraan sertifikasi pelatih kebugaran internasional.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>2021</h4>
+                    <p>Ekspansi ke 8 kota besar dan integrasi teknologi aplikasi pintar untuk pelacakan progres latihan member.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <h4>2026</h4>
+                    <p>Melayani lebih dari 15.000 member aktif di seluruh Indonesia dengan penghargaan Best Fitness Club.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="about-image" data-aos="zoom-in" data-aos-delay="300">
+              <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1470&auto=format&fit=crop" alt="Pusat Kebugaran FitLife" class="img-fluid rounded">
+
+              <div class="mission-vision" data-aos="fade-up" data-aos-delay="400">
+                <div class="mission">
+                  <h3>Misi Kami</h3>
+                  <p>Menyediakan ruang olahraga yang ramah, nyaman, dan fasilitas terbaik untuk membantu setiap individu mencapai potensi kesehatan fisik dan mental secara optimal.</p>
+                </div>
+
+                <div class="vision">
+                  <h3>Visi Kami</h3>
+                  <p>Menjadi rantai pusat kebugaran nomor satu di Asia Tenggara yang menginspirasi gaya hidup aktif, sehat, dan berkelanjutan bagi seluruh lapisan masyarakat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="core-values" data-aos="fade-up" data-aos-delay="500">
+              <h3 class="text-center mb-4">Nilai-Nilai Utama Kami</h3>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                  <div class="value-card">
+                    <div class="value-icon">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Integritas & Keselamatan</h4>
+                    <p>Menjaga standar higienis dan keamanan tertinggi pada setiap alat dan lingkungan gym.</p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="value-card">
+                    <div class="value-icon">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <h4>Komunitas Suportif</h4>
+                    <p>Menciptakan lingkungan yang positif, inklusif, dan ramah bagi pemula maupun atlet profesional.</p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="value-card">
+                    <div class="value-icon">
+                      <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                    <h4>Pelatih Bersertifikasi</h4>
+                    <p>Seluruh personal trainer kami memiliki akreditasi resmi dan terus memperbarui kompetensinya.</p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="value-card">
+                    <div class="value-icon">
+                      <i class="bi bi-lightning-charge-fill"></i>
+                    </div>
+                    <h4>Inovasi Kebugaran</h4>
+                    <p>Selalu memperbarui peralatan dan metode latihan terkini sesuai perkembangan ilmu olahraga dunia.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /History Section -->
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="intro-wrapper">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="intro-image">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1470&auto=format&fit=crop" alt="Head Coach FitLife" class="img-fluid rounded-lg">
+                <div class="experience-badge">
+                  <span class="years">15+</span>
+                  <span class="text">Tahun Pengalaman Kebugaran</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1" data-aos="fade-up" data-aos-delay="300">
+              <div class="intro-content">
+                <span class="subtitle">Manajemen & Master Trainer</span>
+                <h2 class="title">Dipimpin oleh Para Profesional Berpengalaman</h2>
+                <p class="description">Tim pelatih dan manajemen FitLife terdiri dari mantan atlet nasional, master trainer bersertifikat internasional, serta konsultan nutrisi yang berkomitmen memandu perjalanan transformasi tubuh Anda secara aman dan terukur.</p>
+                <div class="highlights">
+                  <div class="highlight-item">
+                    <div class="icon-box">
+                      <i class="bi bi-award-fill"></i>
+                    </div>
+                    <div class="content">
+                      <h4>Sertifikasi Global</h4>
+                      <p>Semua pelatih memiliki sertifikat dari NASM, ACE, atau CSCS internasional.</p>
+                    </div>
+                  </div>
+                  <div class="highlight-item">
+                    <div class="icon-box">
+                      <i class="bi bi-heart-pulse-fill"></i>
+                    </div>
+                    <div class="content">
+                      <h4>Pendekatan Holistik</h4>
+                      <p>Kombinasi latihan fisik, bimbingan pola makan bernutrisi, dan pemulihan tubuh.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="leadership-section" data-aos="fade-up">
+          <div class="section-header text-center">
+            <span class="subtitle">Tim Kami</span>
+            <h2 class="title">Temui Master Coach & Tim Ahli FitLife</h2>
+            <p class="description">Pelatih berdedikasi yang siap mendampingi Anda meraih bentuk tubuh ideal dan kesehatan prima.</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="member-image">
+                      <img src="assets/img/person/person-m-4.webp" alt="Head Coach" class="img-fluid">
+                    </div>
+                    <div class="member-info">
+                      <h4>Rian Firmansyah</h4>
+                      <p>Head of Fitness & Conditioning</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <h4>Rian Firmansyah</h4>
+                    <p class="position">Head of Fitness & Conditioning</p>
+                    <p class="bio">Mantan atlet binaraga nasional dengan pengalaman lebih dari 12 tahun membimbing ribuan transformasi fisik member.</p>
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="member-image">
+                      <img src="assets/img/person/person-f-6.webp" alt="Lead Yoga Instructor" class="img-fluid">
+                    </div>
+                    <div class="member-info">
+                      <h4>Maya Anggraini</h4>
+                      <p>Lead Yoga & Pilates Master</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <h4>Maya Anggraini</h4>
+                    <p class="position">Lead Yoga & Pilates Master</p>
+                    <p class="bio">Praktisi yoga internasional bersertifikasi RYT-500 dengan keahlian khusus postur tubuh dan fleksibilitas.</p>
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="member-image">
+                      <img src="assets/img/person/person-m-9.webp" alt="Nutritionist" class="img-fluid">
+                    </div>
+                    <div class="member-info">
+                      <h4>dr. Kevin Sanjaya, Sp.GK</h4>
+                      <p>Chief Nutrition Consultant</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <h4>dr. Kevin Sanjaya, Sp.GK</h4>
+                    <p class="position">Chief Nutrition Consultant</p>
+                    <p class="bio">Dokter spesialis gizi klinis yang merancang panduan makan ilmiah pendamping program fitness member.</p>
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="team-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="member-image">
+                      <img src="assets/img/person/person-f-5.webp" alt="Group Fitness Lead" class="img-fluid">
+                    </div>
+                    <div class="member-info">
+                      <h4>Siti Nurbaya</h4>
+                      <p>Group Fitness Director</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <h4>Siti Nurbaya</h4>
+                    <p class="position">Group Fitness Director</p>
+                    <p class="bio">Koreografer Zumba berlisensi dan instruktur HIIT yang membawa energi luar biasa di setiap sesi kelas.</p>
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="team-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="member-image">
+                      <img src="assets/img/person/person-f-7.webp" alt="Member Relations" class="img-fluid">
+                    </div>
+                    <div class="member-info">
+                      <h4>Clarissa Wardani</h4>
+                      <p>Head of Member Experience</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <h4>Clarissa Wardani</h4>
+                    <p class="position">Head of Member Experience</p>
+                    <p class="bio">Memastikan seluruh member mendapatkan pelayanan terbaik, konsultasi awal yang tepat, dan onboarding yang nyaman.</p>
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="team-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="member-image">
+                      <img src="assets/img/person/person-m-8.webp" alt="Strength Coach" class="img-fluid">
+                    </div>
+                    <div class="member-info">
+                      <h4>Bambang Wijaya</h4>
+                      <p>Strength & Powerlifting Coach</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <h4>Bambang Wijaya</h4>
+                    <p class="position">Strength & Powerlifting Coach</p>
+                    <p class="bio">Spesialis deadlift, squat, dan bench press yang melatih teknik aman untuk kekuatan dan massa otot maksimal.</p>
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="team-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="member-image">
+                      <img src="assets/img/person/person-m-3.webp" alt="Rehab Specialist" class="img-fluid">
+                    </div>
+                    <div class="member-info">
+                      <h4>Deni Pratama, S.Ft</h4>
+                      <p>Fisioterapi & Mobility Specialist</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <h4>Deni Pratama, S.Ft</h4>
+                    <p class="position">Fisioterapi & Mobility Specialist</p>
+                    <p class="bio">Fisioterapis berlisensi yang fokus pada pencegahan cedera, pemulihan sendi, dan mobilitas gerak tubuh.</p>
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="team-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <div class="member-image">
+                      <img src="assets/img/person/person-f-4.webp" alt="Weight Loss Coach" class="img-fluid">
+                    </div>
+                    <div class="member-info">
+                      <h4>Jessica Natalia</h4>
+                      <p>Fat Loss & Body Shaping Coach</p>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <h4>Jessica Natalia</h4>
+                    <p class="position">Fat Loss & Body Shaping Coach</p>
+                    <p class="bio">Pelatih spesialis program defisit kalori dan pembentukan tubuh proporsional bagi wanita.</p>
+                    <div class="social-links">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-envelope"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Leadership Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">FitLife Gym</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Jl. Jenderal Sudirman No. 123</p>
+            <p>Jakarta Selatan, DKI Jakarta 12190</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 812 3456 7890</span></p>
+            <p><strong>Email:</strong> <span>info@fitlifegym.co.id</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Tautan Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="paket.html">Paket Membership</a></li>
+            <li><a href="group-class.html">Group Class</a></li>
+            <li><a href="galeri.html">Galeri Foto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Program Kami</h4>
+          <ul>
+            <li><a href="personal-trainer.html">Personal Trainer</a></li>
+            <li><a href="group-class.html">Group Fitness</a></li>
+            <li><a href="program-penurunan-berat-badan.html">Weight Loss Camp</a></li>
+            <li><a href="program-pembentukan-otot.html">Bodybuilding</a></li>
+            <li><a href="program.html">Semua Program</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Fasilitas</h4>
+          <ul>
+            <li><a href="galeri.html">Free Weight Area</a></li>
+            <li><a href="galeri.html">Cardio Zone</a></li>
+            <li><a href="galeri.html">Studio Kelas</a></li>
+            <li><a href="galeri.html">Locker & Sauna</a></li>
+            <li><a href="galeri.html">Protein Bar</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Komunitas</h4>
+          <ul>
+            <li><a href="blog.html">Blog & Artikel</a></li>
+            <li><a href="#">Kisah Sukses</a></li>
+            <li><a href="#">Event Bulanan</a></li>
+            <li><a href="#">Karir di FitLife</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">FitLife Gym</strong> <span>All Rights Reserved</span>
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top (Desktop: bottom-left, Mobile: above WA) -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" title="Chat Admin di WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
